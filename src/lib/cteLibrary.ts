@@ -2,7 +2,7 @@ export interface CTESkill {
   id: string
   strand: string
   standards: Standard[]
-  performance_skills: string[]
+  skills: string[]
 }
 
 interface Standard {
@@ -19,23 +19,23 @@ export const cteLibrary: CTESkill[] = [
       {
         standard: "Demonstrate knowledge of standard copyright rules.",
         data: [
-          'Understand copyright for original creations.',
-          'Understand the creative commons license.',
-          'Understand when to obtain permission for non-original work.'
-        ]
+          "Understand copyright for original creations.",
+          "Understand the creative commons license.",
+          "Understand when to obtain permission for non-original work.",
+        ],
       },
       {
-        standard: 'Identify the use and purpose of acceptable use policy (AUP).',
-        data: [
-          'Understand the AUP for your school.'
-        ]
+        standard:
+          "Identify the use and purpose of acceptable use policy (AUP).",
+        data: ["Understand the AUP for your school."],
       },
       {
-        standard: 'Understand ethical behavior as it relates to an AUP, Intellectual Property, Netiquette, Respecting Privacy, Anti- Spamming Laws, etc.',
-        data: []
-      }
+        standard:
+          "Understand ethical behavior as it relates to an AUP, Intellectual Property, Netiquette, Respecting Privacy, Anti- Spamming Laws, etc.",
+        data: [],
+      },
     ],
-    performance_skills: [
+    skills: [
       "Understand copyright as it applies to you.",
       "Understand a basic AUP agreement.",
     ],
@@ -45,13 +45,49 @@ export const cteLibrary: CTESkill[] = [
     strand:
       "Fundamentals of HTML5: Students will create a multi-page website using good coding practice (Such as those found in W3Schools.)",
     standards: [
-      "Demonstrate knowledge required to develop an HTML document.",
-      "Explain appropriate file structure and naming conventions.",
-      "Use the DOCTYPE Declaration.",
-      "Code a website with appropriate HTML structure and according to W3C standards that can be validated.",
-      "Demonstrate the use of input elements and attributes.",
+      {
+        standard: "Demonstrate knowledge required to develop an HTML document.",
+        data: [
+          "Code the foundation for a webpage. Include the element tags DOCTYPE, html, head, title, and body.",
+          "Structure the page using semantic and structural elements such as: header, nav, main, section, article, aside, footer, div, etc.",
+          "Use meta tags for page documentation.",
+          "Use appropriate comments.",
+        ],
+      },
+      {
+        standard: "Explain appropriate file structure and naming conventions.",
+        data: [
+          "Use logical file structure to build websites.",
+          "Incorporate appropriate naming conventions for website files.",
+        ],
+      },
+      {
+        standard: "Use the DOCTYPE Declaration.",
+        data: ["Develop pages using the DOCTYPE declaration."],
+      },
+      {
+        standard:
+          "Code a website with appropriate HTML structure and according to W3C standards that can be validated.",
+        data: [
+          "Demonstrate best practice by consistently using lowercase text for all element names.",
+          "Properly nest elements.",
+          "Use quotes on attribute values.",
+        ],
+      },
+      {
+        standard: "Demonstrate the use of input elements and attributes.",
+        data: [
+          "Create pages with tags and attributes at the block level. (html, head, body, style, header, nav, main, section, footer, div)",
+          "Create pages with tags and attributes at the inline level. (DOCTYPE, title, h1, h2, h6, p, br, meta, etc.)",
+          "Code a website with text formatting, links, images, lists, tables (tabular data), etc.",
+          "Relative Links are relative to the directory of the website. (images/photo.jpg)",
+          "Absolute links are the exact location on the internet and contain a protocol. (http, https, ftp)",
+          "Code special characters such as: &nbsp; &copy; &quot; &lt; &gt; &amp; &mdash;.",
+          "Demonstrate the use of HTML forms, buttons, text fields, checkboxes, and radio buttons. (Form does not need to submit to an actual database or email.)",
+        ],
+      },
     ],
-    performance_skills: [
+    skills: [
       "HTML5 semantic tags (header, footer, section, article, nav, aside)",
       "Meta tags",
       "Use special characters",
@@ -67,12 +103,43 @@ export const cteLibrary: CTESkill[] = [
     strand:
       "Cascading Style Sheets (CSS): Students will format websites using CSS.",
     standards: [
-      "Apply CSS to your website.",
-      "Apply essential syntax & CSS box model.",
-      "Students will format websites using CSS",
-      "Format page layout using CSS.",
+      {
+        standard: "Apply CSS to your website.",
+        data: [
+          "Apply CSS to an element using an inline style. (An inline style may be used to apply a unique style for a single element.)",
+          "Apply CSS to a webpage using an internal style. (Internal style rules may be used to uniquely style a single page.)",
+          "Apply CSS to a website using an external stylesheet. (Best Coding Practice - One file changes the entire website.)",
+        ],
+      },
+      {
+        standard: "Apply essential syntax & CSS box model",
+        data: [
+          "Add style rule, declaration, selector, property value pair. Use correct css syntax",
+        ],
+      },
+      {
+        standard: "Students will format websites using CSS",
+        data: [
+          "Modify background properties such as: color and image.",
+          "Modify font properties such as: font-family, size, and color.",
+          "Link to and use an online font. (i.e.: Google Fonts, Adobe Fonts, etc.)",
+          "Modify margin and padding size around elements.",
+          "Code id & class tags within HTML",
+          "Within CSS use id & class tags to modify a HTML elements.",
+          "Implement an id selector to modify a single element on the page.",
+          "Implement selectors pseudo class elements (i.e.: a:link, a:visited, a:active a:hover)",
+          "Use appropriate comments throughout your CSS",
+        ],
+      },
+      {
+        standard: "Format page layout using CSS.",
+        data: [
+          "Use width, height, or auto to adjust the size.",
+          "Use CSS Grid to layout the websites.",
+        ],
+      },
     ],
-    performance_skills: [
+    skills: [
       "Background image(s) or Background color",
       "Import graphics (jpeg/gif/png/svg)",
       "Font changes (color, size, style)",
@@ -84,11 +151,28 @@ export const cteLibrary: CTESkill[] = [
     strand:
       "Site Planning: Students will plan, design, implement, and maintain website(s). ",
     standards: [
-      "Analyze Project requirements.",
-      "Users are the focus of all design.",
-      "Code and design a minimum three-page website. (This is integrated into every Strand.)",
+      {
+        standard: "Analyze Project requirements.",
+        data: [
+          "Identify basic principles of website usability, readability, and accessibility",
+          "Identify and follow steps in the website planning and development process.",
+          "Identify and follow steps in the website planning and development process.",
+        ],
+      },
+      {
+        standard: "Users are the focus of all design.",
+        data: [
+          "Plan a website by using sketches, wireframes, or site maps",
+          "Design elements are easy to access, understand, and use.",
+          "Keep the interface simple, create consistency, use common UI elements, placement in page layout, strategically use color and texture, use typography to help increase scannability, legibility and readability, and inform your users of location, actions, or errors.",
+        ],
+      },
+      {
+        standard: "Code and design a minimum three-page website.",
+        data: [],
+      },
     ],
-    performance_skills: [
+    skills: [
       "Build a mock-up, sketch, or wireframe of a website",
       "Check for cross browser compatibility, readability, and accessibility",
     ],
@@ -98,19 +182,223 @@ export const cteLibrary: CTESkill[] = [
     strand:
       "The student will create and prepare images to integrate with website designs, using image editing software.",
     standards: [
-      "Open, edit, and save an image for effective use on your website.",
-      "Incorporate a logo and header into webpage.",
-      "Incorporate images into a website.",
+      {
+        standard:
+          "Open, edit, and save an image for effective use on your website.",
+        data: [
+          "Crop and resize various images.",
+          "Optimize an image.",
+          "Enhance an image.",
+        ],
+      },
+      {
+        standard: "",
+        data: [
+          "Incorporate a logo and header into webpage.",
+          "Incorporate images into a website.",
+        ],
+      },
     ],
-    performance_skills: [
+    skills: [
       "Add an enhanced image to your website.",
       "Optimize an image for quick loading on a website.",
     ],
   },
   {
     id: "6",
-    strand: 'Exploration & Preparation for Careers in Web Development: Students will explore careers in web development and prepare a portfolio of projects created.',
+    strand:
+      "Exploration & Preparation for Careers in Web Development: Students will explore careers in web development and prepare a portfolio of projects created.",
     standards: [
-      'Explore IT web development careers.'
-  }
+      {
+        standard: "Explore IT web development careers.",
+        data: [
+          "Identify job roles in the Information Technology (IT) industry as they apply to web development.",
+          "Understand the responsibilities, tasks, and skills each job requires.",
+          "UI designer, UX designer, front-end web developer, back-end web developer, and full stack developer.",
+        ],
+      },
+    ],
+    skills: [
+      "Communication",
+      "Teamwork",
+      "Critical and Creative Thinking",
+      "Problem Solving",
+      "Dependability",
+      "Legal requirements / expectations",
+    ],
+  },
+  {
+    id: "7",
+    strand:
+      "Fundamentals of HTML5: Students will create a muti-page website using good coding practice.",
+    standards: [
+      {
+        standard: "Use advanced HTML5 elements to create website.",
+        data: [
+          "Add SVG images (i.e.: image map, icons, logos, etc.)",
+          "Code HTML forms on websites (i.e.: radio, checkbox, text field, text area, field set, dropdown lists, legend, etc.)",
+          "Submit Button (Students need to code the button, but it will not submit without access to a server)",
+          "Code iframes or add the canvas element on a website",
+          "Incorporate JavaScript on a webpage",
+        ],
+      },
+    ],
+    skills: [
+      "Students will be able to code advanced HTML5 elements to create a website.",
+    ],
+  },
+  {
+    id: "8",
+    strand:
+      "Cascading Style Sheets (CSS): Students will style websites using CSS.",
+    standards: [
+      {
+        standard: "Understand the use of various CSS selectors.",
+        data: [
+          "Understand the cascade order for browser default, inline, internal, and external style sheet ",
+          "Code element selections to modify HTML elements (tag, ID, & classes)",
+          "Code contextual selectors to modify nested elements (i.e.: footer nav {}, header ul {}, etc.)",
+          "Code pseudo class selectors (i.e.: a: link, a:visited, a:active a:hover)",
+          "Code pseudo element selectors",
+        ],
+      },
+      {
+        standard: "",
+        data: [
+          "Format page layout with advanced CSS",
+          "Use grids, flexbox, or a combination for page layouts",
+          "Use width, height, or auto to adjust the size of the elements",
+          "Code navigation bars",
+          "Use text align, margin, and padding",
+          "Use float to position elements",
+        ],
+      },
+      {
+        standard: "",
+        data: [
+          "Build responsive websites.",
+          "Media queries",
+          "SVG & picture elements",
+          "Responsive text size - using rem, vh, and vw in css",
+          "Responsive navigation bar",
+          "Introduce the concept of frameworks like: BootStrap, JQuery, Vue.js, Nodejs, etc",
+        ],
+      },
+      {
+        standard: "Code animation and graphics with advanced CSS.",
+        data: [
+          "Buttons. (i.e.: rounded, colored, etc.)",
+          "Image overlay hover. (i.e.: Fade-in, slide-out, etc.)",
+          "Image slider or carousel",
+        ],
+      },
+    ],
+    skills: [],
+  },
+  {
+    id: "9",
+    strand:
+      "Site Planning and Design: Students will plan, design, implement, and maintain website(s).",
+    standards: [
+      {
+        standard: "Create a website plan and pitch for a client.",
+        data: [
+          "Identify basic principles of website usability, readability, and accessibility",
+          "Plan a website by using sketches, website hierarchy, wireframe, or a site map",
+          "Communicate with others (such as peers and clients) about design and content plans",
+          "Produce website designs that work on various devices and browser versions/configurations",
+          "Plan, communicate, or present a client’s website before, during or after website development",
+        ],
+      },
+      {
+        standard: "Create content for website.",
+        data: [
+          "Create and prepare 2D images. .gif, .png, .jpg, .svg",
+          "Prepare rich media, such as, video, sound, or animation",
+          "Identify when to use various image and digital media file formats",
+          "Optimize images for web content, such as resize, resolution, compress, thumbnails",
+          "Understand the use of favicons",
+          "Identify how to avoid violating copyright rules",
+          "Demonstrate the use of semantic elements such as: audio, video, and figure",
+        ],
+      },
+      {
+        standard: "Uploading and maintaining a site.",
+        data: [
+          "FTP pages to a web server (*Optional if security allows.)",
+          "Differentiate between types of IP addresses",
+          "Describe a static IP address",
+          "Describe a Dynamic IP address",
+          "Differentiate between ipv4 and ipv6",
+          "Conduct basic technical tests such as validating the website (W3C compliant), accessibility, SEO, etc.",
+          "Present webpages to others for quality assurances (QA) such as team members and clients for feedback and evaluation on technical merits and usability",
+          "Identify methods for collecting site feedback, such as using counters, feedback forums, Google Analytics, Google Webmaster Tools",
+          "Provide site maintenance using bug reports, backups, and promotion",
+          "Document all aspects of website maintenance",
+          "Identify internet protocols: http, https, ftp",
+        ],
+      },
+      {
+        standard: "Work as a team to create a website.",
+        data: [
+          "Use good oral and written communication skills as a team member",
+        ],
+      },
+    ],
+    skills: [],
+  },
+  {
+    id: "10",
+    strand: `JavaScript has become an essential web technology along with HTML and CSS, as most browsers implement JavaScript. Students will understand basic JavaScript in front-end and back-end development, mobile app development, desktop app development, and game development.`,
+    standards: [
+      {
+        standard: "Intro to JavaScript",
+        data: [
+          "Introduce JavaScript and how it is used in web development",
+          "Include some simple JavaScript in your website.",
+        ],
+      },
+      {
+        standard: "Functions in JavaScript",
+        data: ["Introduce functions", "Create custom functions"],
+      },
+      {
+        standard: "Variables in JavaScript",
+        data: ["Introduce variables and uses"],
+      },
+      {
+        standard: "Input in JavaScript",
+        data: [
+          "Learn how to gather input from the user",
+          "Store user input into a variable",
+        ],
+      },
+    ],
+    skills: [],
+  },
+  {
+    id: "11",
+    strand: "Comprehensive website. (Suggested time proportion 5%)",
+    standards: [
+      {
+        standard: "Build an interactive response website",
+        data: [],
+      },
+      {
+        standard:
+          "Participate in a CTSO, Utah Digital Media Arts Festival, or competition",
+        data: [],
+      },
+    ],
+    skills: [
+      "Create and validate website HTML",
+      "Create and validate website CSS",
+      "Communication",
+      "Teamwork",
+      "Critical and Creative Thinking",
+      "Problem Solving",
+      "Dependability",
+      "Legal requirements / expectations",
+    ],
+  },
 ]
